@@ -13,7 +13,7 @@ async function initMap() {
   map = new Map(document.getElementById("map"), {
     zoom: 4,
     center: position,
-    mapId: "DEMO_MAP_ID",
+    mapId: "ed716943a4d2d8a1",
   });
 
 // Define an array of markers data with content formatting for alignment
