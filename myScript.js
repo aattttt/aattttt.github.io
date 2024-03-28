@@ -1,4 +1,5 @@
-// Initialize and add the map
+
+
 let map;
 
 async function initMap() {
@@ -20,8 +21,7 @@ async function initMap() {
 const markersData = [
   {
     position: { lat: 38.627003, lng: -90.199402 },
-    title: "T.S. Eliot",
-    author: "T. S. Eliot",
+    author: "T.S. Eliot",
     work: "The Wasteland",
     poem: `April is the cruellest month, breeding
 Lilacs out of the dead land, mixing
@@ -30,7 +30,6 @@ Dull roots with spring rain.`,
   },
   {
     position: { lat: 42.361145, lng: -71.000000 },
-    title: "Edgar Allan Poe",
     author: "Edgar Allan Poe",
     work: "The Raven",
     poem: `Once upon a midnight dreary, while I pondered, weak and weary,
@@ -39,8 +38,6 @@ While I nodded, nearly napping, suddenly there came a tapping,
 As of some one gently rapping, rapping at my chamber door.`,
   },
   {
-    position: { lat: 40.6782, lng: -73.9442 },
-    title: "Walt Whitman",
     author: "Walt Whitman",
     work: "Song of Myself",
     poem: `I celebrate myself, and sing myself,
@@ -48,6 +45,7 @@ And what I assume you shall assume,
 For every atom belonging to me as good belongs to you.
 I loafe and invite my soul,
 I lean and loafe at my ease observing a spear of summer grass.`,
+    position: { lat: 40.6782, lng: -73.9442 },
   },
   // Add more markers data here
 ];
@@ -62,7 +60,7 @@ markersData.forEach(data => {
   const marker = new AdvancedMarkerElement({
     map: map,
     position: data.position,
-    title: data.title,
+    title: data.author,
   });
 
   const infowindow = new google.maps.InfoWindow({
