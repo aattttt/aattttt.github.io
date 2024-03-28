@@ -1,5 +1,5 @@
 #map {
-  height: 500px;
+  height: 90vh;
 
 }
 
@@ -16,10 +16,16 @@ body {
   background-color:#405040;
   padding: 20px;
   text-align: center;
-
   color: whitesmoke;
+}
 
- 
+@media screen and (max-width: 600px) {
+.header {
+  background-color:#405040;
+  padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+  }
 }
 
 /* Style the tab */
